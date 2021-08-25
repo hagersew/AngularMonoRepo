@@ -1,0 +1,6 @@
+{
+  "/api/cyber": {
+    "target": "http://localhost:3003",
+    "secure": false
+  }
+}

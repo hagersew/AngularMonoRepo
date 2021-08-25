@@ -1,0 +1,21 @@
+{
+  "bracketSpacing": true,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "printWidth": 140,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "angular"
+      }
+    },
+    {
+      "files": "*.scss",
+      "options": {
+        "parser": "scss"
+      }
+    }
+  ]
+}

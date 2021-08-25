@@ -1,0 +1,42 @@
+<section class="sticky z-10" style="top: 50px; height: 120px;">
+  <div class="page-header-bg"></div>
+  <nz-page-header class="site-page-header" class="bg-white">
+    <nz-page-header-title>{{ title }}</nz-page-header-title>
+    <nz-breadcrumb nz-page-header-breadcrumb *ngIf="breadcrumbs">
+      <nz-breadcrumb-item *ngFor="let breadcrumb of breadcrumbs; index as i; trackBy: i">
+        <a [routerLink]="breadcrumb.url">{{ breadcrumb.title }}</a>
+      </nz-breadcrumb-item>
+    </nz-breadcrumb>
+    <nz-page-header-extra *ngIf="actionButton; else elseBlock">
+      <ng-template [ngxPermissionsOnly]="actionButton.permissions">
+        <ng-container *ngTemplateOutlet="actionButtonTemplate ? actionButtonTemplate : renderButton"> </ng-container>
+        <ng-template #renderButton>
+          <a style="margin-right: 3px;" nz-button *ngIf="actionButton && actionButton.url" nzType="primary" [routerLink]="actionButton.url">
+            <i nz-icon *ngIf="actionButton.icon" [nzType]="actionButton.icon"></i>
+            {{ actionButton.title }}</a
+          >
+          <a nz-button *ngIf="actionButton && actionButton.onClick" nzType="primary" (click)="actionButton.onClick()">
+            <i nz-icon *ngIf="actionButton.icon" [nzType]="actionButton.icon"></i>
+            {{ actionButton.title }}</a
+          >
+        </ng-template>
+      </ng-template>
+    </nz-page-header-extra>
+    <ng-template #elseBlock>
+      <nz-page-header-extra>
+        <ng-container *ngTemplateOutlet="actionButtonTemplate ? actionButtonTemplate : renderButton"> </ng-container>
+        <ng-template #renderButton>
+          <a style="margin-right: 3px;" nz-button *ngIf="actionButton && actionButton.url" nzType="primary" [routerLink]="actionButton.url">
+            <i nz-icon *ngIf="actionButton.icon" [nzType]="actionButton.icon"></i>
+            {{ actionButton.title }}</a
+          >
+          <a nz-button *ngIf="actionButton && actionButton.onClick" nzType="primary" (click)="actionButton.onClick()">
+            <i nz-icon *ngIf="actionButton.icon" [nzType]="actionButton.icon"></i>
+            {{ actionButton.title }}</a
+          >
+        </ng-template>
+      </nz-page-header-extra>
+    </ng-template>
+  </nz-page-header>
+  <div class="page-header-bg"></div>
+</section>

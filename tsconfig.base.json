@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "preserveSymlinks": true,
+    "paths": {
+      "@es/core": ["libs/core/src/index.ts"],
+      "@es/shared": ["libs/shared/src/index.ts"],
+      "@es/features/account": ["libs/features/account/src/index.ts"],
+      "@sencha/*": ["node_modules/@sencha/*"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"],
+  "include": ["**/lib/**/*.ts", "src/**/*.ts", "node_modules/@sencha/**/*.ts"]
+}

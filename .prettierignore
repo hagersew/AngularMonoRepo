@@ -1,0 +1,10 @@
+# Add files here to ignore them from prettier formatting
+
+/dist
+/coverage
+package.json
+angular.json
+tslint.json
+package-lock.json
+
+.vscode/*

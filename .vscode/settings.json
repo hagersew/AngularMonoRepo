@@ -1,0 +1,98 @@
+{
+  "breadcrumbs.enabled": true,
+  "editor.autoIndent": "full",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.codeLens": true,
+  "editor.detectIndentation": true,
+  "editor.folding": true,
+  "editor.foldingStrategy": "indentation",
+  "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "none",
+  "editor.rulers": [140],
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.snippetSuggestions": "top",
+  "editor.autoClosingBrackets": "always",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "html"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "explorer.confirmDelete": false,
+  "explorer.autoReveal": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onWindowChange",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": {
+      "when": "$(basename)"
+    }
+  },
+
+  "files.defaultLanguage": "typescript",
+
+  "git.enabled": true,
+  "git.autofetch": true,
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "html.format.wrapAttributes": "force",
+  "html.format.wrapLineLength": 140,
+  "npm.enableScriptExplorer": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#35703f",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#123a18",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "statusBar.background": "#35703f",
+    "statusBarItem.hoverBackground": "#123a18",
+    "statusBar.foreground": "#e7e7e7"
+  },
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.folders.associations": {
+    "features": "public",
+    "store": "ngrx-store",
+    "actions": "ngrx-actions",
+    "states": "ngrx-state",
+    "facades": "controller",
+    "directives": "shared",
+    "designers": "custom"
+  },
+  "material-icon-theme.files.associations": {
+    "*.action.ts": "ngrx-actions",
+    "*.state.ts": "ngrx-state",
+    "*.endpoint.ts": "url",
+    "*.config.ts": "settings"
+  },
+  "editor.formatOnSave": true,
+  "cSpell.words": [
+    "antd",
+    "ngxs",
+    "semibold"
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}

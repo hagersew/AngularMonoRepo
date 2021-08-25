@@ -1,0 +1,41 @@
+{
+  "logger": {
+    "prefix": "cl",
+    "body": [
+      " this.logger.log(${TM_SELECTED_TEXT})"
+    ],
+    "description": "logger"
+  },
+  "track by function": {
+    "prefix": "trackBy",
+    "body": [
+      "  public trackByFn(index, item): any {",
+      "    if (item && item.id) {",
+      "      return item.id;",
+      "    }",
+      "",
+      "    return index;",
+      "  }"
+    ],
+    "description": "track by function"
+  },
+  "model": {
+    "prefix": "model",
+    "body": [
+      "export interface ${1:interface}{",
+      "  $0",
+      "}"
+    ],
+    "description": "model"
+  },
+  "enum with key": {
+    "prefix": "enum",
+    "body": [
+      "export enum ${1:name}{",
+      "  ${2:key}= '${3:value}',",
+      "  ${4:key}= '${5:value}',",
+      "}"
+    ],
+    "description": "enum with key"
+  }
+}
