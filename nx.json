@@ -32,6 +32,11 @@
         "demo"
       ]
     },
+    "core": {
+      "tags": [
+        "core"
+      ]
+    },
     "shared": {
       "tags": [
         "shared"
