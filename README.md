@@ -1,3 +1,7 @@
+# Angular Mono Repo
+
+Angular monorepo is a single repository that contains multiple Angular projects. This can be a good option for teams that are developing multiple Angular applications, as it can help to reduce code duplication and make it easier to manage dependencies.
+
 # EsStarter
 
 This project was generated using [Nx](https://nx.dev).
