@@ -1,6 +1,6 @@
 module.exports = {
+  content: ['./apps/**/*.{html,ts}'],
   purge: false,
-  target: 'relaxed',
   prefix: '',
   important: false,
   separator: ':',
